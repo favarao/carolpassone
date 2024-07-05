@@ -20,15 +20,15 @@
                                 <li class="sub-item"><a href="nossos-valores.php">Nossos Valores</a></li>
                             </ul>
                         </li>*/?>
-                        <li class="nav-item"><a href="e-social.php">Tratamentos</a></li>
-                        <li class="nav-item"><a href="seguranca-do-trabalho.php">Quem sou eu</a></li>
-                        <li class="nav-item"><a href="medicina-do-trabalho.php">Contatos</a></li>
+                        <li class="nav-item"><a class="link" onClick="scrollToClass('tratamentos')">Tratamentos</a></li>
+                        <li class="nav-item"><a class="link" onClick="scrollToClass('especialidades')">Quem sou eu</a></li>
+                        <li class="nav-item"><a class="link" onClick="scrollToClass('atendimentos')">Contatos</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="header-info">
-			<div class="header-info-left">
+			<div class="header-info-left col-lg-6">
 				<div class="header-apresentacao">
 					<div class="content">
 						<h2 class="page-title">Muito prazer!</h2>
@@ -54,8 +54,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="header-info-right">
-				<img src="images/imagem-caroline.png" alt="Dra. Caroline Passone - Endocrinopediatra" title="Dra. Caroline Passone - Endocrinopediatra">
+			<div class="header-info-right col-lg-6">
+				<img src="images/background.png" alt="Dra. Caroline Passone - Endocrinopediatra" title="Dra. Caroline Passone - Endocrinopediatra">
 			</div>
 		</div>
         </div>

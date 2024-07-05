@@ -1,8 +1,20 @@
+function scrollToClass(className) {
+    var target = $('.' + className);
+    if (target.length) {
+        menos = 0;
+        if ($(window).width() <= 992)
+            menos = 80;
+        $('html, body').animate({
+            scrollTop: target.first().offset().top-menos
+        }, 0); // Rola suavemente para a posição do alvo em 1 segundo (1000 ms)
+        $(".black-screen").click();
+    }
+}
 
 
 $(document).ready(function(){
     $(window).on('resize', function() {
-        if ($(window).width() <= 768) {
+        if ($(window).width() <= 992) {
             $('.nav-links').addClass('link-mobile');
         } else {
             $('.nav-links').removeClass('link-mobile');

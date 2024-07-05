@@ -19,38 +19,66 @@ header nav ul li { font-size: 18px; font-weight: 400; padding: 0 40px; }
 header nav ul li:first-child { padding-left: 0; }
 header nav ul li:last-child { padding-right: 0; }
 header nav ul li a{ display: block; color: #000; }
-.header-info { display: flex; }
-.header-info .header-info-left { width: 50%; /*background: url(../images/bkg-header-left.jpg) left bottom repeat-x;*/ }
-.header-info .header-info-left .header-apresentacao { padding-top: 90px; }
+.header-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header-info .header-info-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-info .header-info-left .header-apresentacao { margin-top: 20px; }
 .header-info .header-info-left .content { max-width: 70%; }
-.header-info .header-info-left h2 { font-size: 32px; margin-bottom: 22px; line-height: 32px; }
-.header-info .header-info-left h1 { font-size: 48px; line-height: 48px; }
-.header-info .header-info-left p{ font-size: 24px; margin-top: 12px; }
+.header-info .header-info-left h2 {
+    font-size: 28px;
+    margin-bottom: 0;
+    line-height: 32px;
+}
+.header-info .header-info-left h1 {
+    font-size: 35px;
+    margin-bottom: 0;
+}
+.header-info .header-info-left p {
+    font-size: 20px;
+    margin-top: 5px;
+}
 .header-info .header-info-left p:after { content: ''; height: 10px; width: 96%; background-color: #673628; display: block; margin-top: 8px; border-radius: 32px; }
-.header-info .header-info-left .header-especialidades { margin: 30px 0; background-color: #f4f2ee; padding: 30px 0; }
-.header-info .header-info-left ul { margin-left: 20px; }
-.header-info .header-info-left li { list-style: disc; font-size: 20px; }
+.header-info .header-info-left .header-especialidades {
+    margin: 0;
+    background-color: #f4f2ee;
+    padding: 20px 0;
+}
+.header-info .header-info-left ul { margin-left: 0px; }
+.header-info .header-info-left li { list-style: disc; font-size: 16px; }
 .header-info .header-info-left li::marker { color: #673628; }
-.header-info .header-info-right { width: 50%; background: url(../../images/bkg-header-right.jpg) right bottom no-repeat; background-size: contain; text-align: right; }
-.header-info .header-info-right img { vertical-align: bottom; margin-right: 12%; }
-.header-contato { margin: 50px 0; }
-.header-contato a { 
-	display: block; 
-	max-width: fit-content; 
-	margin: 0 auto; 
-	padding: 15px 30px; 
-	background-color: #4a5d3f; 
-	border-radius: 30px; 
-	color: #FFF; 
-	font-size: 18px; 
-	font-weight: 400; 
-	text-transform: uppercase; 
-	-webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.2);
-	-moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.2);
-	box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.2);
+.header-info .header-info-right {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+/* .header-info .header-info-right img { vertical-align: bottom; margin-right: 12%; } */
+.header-contato { margin: 40px 0; }
+
+.header-contato a {
+    display: block;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4a5d3f;
+    border-radius: 30px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
-main .especialidades { background-color: #d7c9c6; padding: 50px 0; }
+main .especialidades { background-color: #d7c9c6;}
 .especialidades .sliders { display: flex; justify-content: space-between; }
 .especialidades .sliders .slider { 
 	display: flex; 
@@ -66,25 +94,37 @@ main .especialidades { background-color: #d7c9c6; padding: 50px 0; }
 .especialidades .sliders .slider .icone { margin-right: 15px; }
 .especialidades .sliders .slider strong { display: block; margin-bottom: 7px; }
 
-main .atendimentos { padding: 50px 0; }
+main .atendimentos {padding: 50px 0 100px;}
 main section h2 { color: #393b38; font-size: 28px; font-weight: 400; line-height: 24px; text-align: center; text-transform: uppercase; margin-bottom: 90px; }
 
 .atendimentos .atendimentos-content { display: flex; justify-content: space-evenly; }
 .atendimentos-content .bloco {
 	background-color: #eae7e0; 
 	border-radius: 30px; 
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 	-webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.15);
 	-moz-box-shadow: 0 0 10px 5px rgba(0,0,0,0.15);
 	box-shadow: 0 0 10px 5px rgba(0,0,0,0.15);
 }
 .atendimentos-content .bloco .imagem { text-align: center; margin: -50px auto 30px;; max-width: 90%; }
-.atendimentos-content .local { max-width: 340px; margin: 0 auto; color: #393b38; }
+.atendimentos-content .local {
+    margin: 0 10%;
+    color: #393b38;
+}
 .local h3 { font-size: 24px; font-weight: 700; }
-.local .endereco { font-size: 18px; margin-bottom: 30px; }
-.local .horario { display: flex; align-items: center; font-size: 18px; margin-bottom: 30px; }
+.local .endereco {
+    font-size: 18px;
+    font-weight: 500;
+    min-height: 80px;
+}
+.local .horario { display: flex; align-items: center; font-size: 16px; margin-bottom: 30px; }
 .local .horario img { margin-right: 12px; }
-.local .contato { display: flex; align-items: center; font-size: 18px; }
+.local .horario, .local .contato {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
 .local .contato img { margin-right: 12px; }
 
 main .tratamentos { background-color: #d8d2c6; padding: 50px 0; }
@@ -93,9 +133,7 @@ footer { background-color: #4a5d3f; padding: 30px 0; text-align: center; color: 
 footer p { margin-bottom: 15px; }
 footer small { font-size: 18px; }
 
-.header-mobile img {
-    width: 150px;
-}
+
 
 .header-mobile button {
     position: absolute;
@@ -169,6 +207,8 @@ header nav ul {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 99;
+    box-shadow: 0px 1px 20px 0px #c5c5c5;
 }
 
 .shade {
@@ -188,11 +228,11 @@ header nav ul {
     height: 100vh;
     width: 100%;
     background: #000000b8;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .bloco .imagem img {
-    width: 100%;
+    width: 90%;
 }
 
 .atendimentos-content .bloco .imagem {
@@ -224,6 +264,8 @@ header nav ul {
 .nav-tratamentos {
     display: flex;
     gap: 5px;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
 .tratamentos .tab-pane ul li {
@@ -238,12 +280,193 @@ header nav ul {
 .header-container{
 	background: white;
 }
+
+.header-info-right img {
+    width: 100%;
+}
+
+.link:hover{
+    padding: 0 10px;
+}
+.link{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80%;
+}
+
+.owl-carousel .item {
+    border: 3px solid #af8d84;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 14px;
+    text-align: left;
+    font-size: 14px;
+    height: 100%;
+    padding-top: 0;
+}
+
+.tratamento-img {
+    display: flex;
+    justify-content: center;
+}
+
+.tratamento-img .imagem {
+    position: absolute;
+    top: 10px;
+    width: 170px;
+}
+
+.tratamento-img .tratamento-background {
+    width: 135px;
+    margin-left: 85px;
+    margin-top: -1px;
+    margin-bottom: 45px;
+}
+
+.owl-carousel .item h1{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+.owl-item{
+    margin: 10px 0;
+}
+
+.owl-carousel .owl-stage{
+    display: flex;
+    padding-top: 20px;
+}
+
+
+
+
+.menu-nav{
+    padding-top: 15px;
+}
+
+.owl-formacoes .item {
+    border: none !important;
+    padding: 0 25px;
+}
+
+.owl-formacoes .owl-stage{
+    padding-top:0 !important;
+}
+
+.owl-dots {
+    display: block !important;
+}
+
+.owl-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.owl-dot.active {
+    background: #000;
+}
+
+.slick-formacoes .slick-slide {
+    margin: 40px 25px 60px;
+}
+.slick-tratamentos .slick-slide{
+    border: 3px solid saddlebrown;
+    padding: 0 20px;
+    margin: 40px;
+    border-radius: 25px;
+    height: auto;
+}
+
+.slick-track{
+    display: flex;
+}
+
+.slick-slide li {
+    list-style-type: disc !important;
+}
+
+.slick-tratamentos .slick-prev:before, .slick-tratamentos .slick-next:before{
+    color: saddlebrown;
+}
+
+.especialidades .slick-prev:before, .especialidades .slick-next:before {
+    color: #917462;
+}
+
+.slick-dots{
+    bottom:15px;
+}
+.slick-tratamentos .slick-dots {
+    bottom: -13px;
+}
+.slick-dots li button:before{
+    color: #917462;
+    font-size: 10px;
+}
+.slick-dots li.slick-active button:before{
+    color: #917462;
+}
+.slick-dots li{
+    margin: 0;
+}
+.slick-dotted.slick-slider{
+    margin-bottom: 0;
+}
 @media(max-width: 550px){
     .container{
-        width: 92%;
-    }''
+        width: 90%;
+    }
+    .slider p {
+        font-size: 12px;
+    }
 }
-@media(max-width: 768px){
+@media (min-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+    
+}
+@media(max-width: 992px){
+    .logo img {
+        width: 150px;
+    }
+    .slick-tratamentos .slick-slide{
+        margin: 40px 1px;
+    }
+    .header-info .header-info-left .content{
+        max-width: 92%;
+    }
+    .header-info-right img{
+        margin-left: -24%;
+    }
+    .header-info-right{
+        width: 100% !important;
+        order: 0;
+    }
+    .header-info-left{
+        width: 100% !important;
+        order: 1;
+    }
     .atendimentos .atendimentos-content {
         display: flex;
         flex-direction: column;
@@ -288,7 +511,7 @@ header nav ul {
         height: 100vh;
         width: 250px;
         background: #ffffff;
-        z-index: 99999;
+        z-index: 9999;
     }
 
     .header-mobile{
@@ -297,5 +520,24 @@ header nav ul {
     
     header{
         margin-top: 80px;
+    }
+}
+@media(max-width: 1280px){
+    .header-info-right img {
+        width: 117%;
+}
+}
+
+@media(max-width: 1200px){
+    .header-info-right img{
+        width: 110%;
+    }
+    .header-info .header-info-left .content {
+        max-width: 92%;
+    }
+}
+@media(max-width: 1140px){
+    .header-info-right img{
+        width: 130%;
     }
 }
