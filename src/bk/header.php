@@ -6,24 +6,31 @@
     </div>
     <div class="shade">
         <div class="header-container">
-            <div data-aos="fade-down" class="menu-nav container">
+            <div class="menu-nav container">
                 <div class="logo"><a href="/"><img src="images/logo.png" alt="logo"></a></div>
                 <div class="black-screen" style="display:none"></div>
                 <div class="nav">
                     <ul class="nav-links">
                         <li class="nav-item logo-mobile"><a href="/"><img src="images/logo.png" alt="logo"></a></li>
-                        <li class="nav-item"><a class="link" href="/">Home</a></li>
-                        <li class="nav-item"><a class="link" onClick="scrollToClass('especialidades')">Quem sou eu</a></li>
+                        <li class="nav-item"><a href="/">Home</a></li>
+                        <?php /*
+                        <li class="nav-item"><a href="quem-somos.php">Sobre Nós</a>
+                            <ul class="menu-group">
+                                <li class="sub-item"><a href="quem-somos.php">Sobre</a></li>
+                                <li class="sub-item"><a href="nossos-valores.php">Nossos Valores</a></li>
+                            </ul>
+                        </li>*/?>
                         <li class="nav-item"><a class="link" onClick="scrollToClass('tratamentos')">Tratamentos</a></li>
-                        <li class="nav-item"><a class="link" onClick="scrollToClass('atendimentos')">Contato</a></li>
+                        <li class="nav-item"><a class="link" onClick="scrollToClass('especialidades')">Quem sou eu</a></li>
+                        <li class="nav-item"><a class="link" onClick="scrollToClass('atendimentos')">Contatos</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="header-info">
-			<div data-aos="fade-right" class="header-info-left col-lg-6">
+			<div class="header-info-left">
 				<div class="header-apresentacao">
-					<div class="content">
+					<div class="container">
 						<h2 class="page-title">Muito prazer!</h2>
 						<h1>Dra. Caroline Passone,</h1>
 						<h1>Endocrinopediatra</h1>
@@ -31,7 +38,7 @@
 					</div>
 				</div>
 				<div class="header-especialidades">
-					<div class="content">
+					<div class="container">
 						<ul>
 							<li>Especialista em diabetes mellitus tipo 1 e Síndrome de Prader Willi</li>
 							<li>Mestre e Doutora em Pediatria e Endocrinologia pela Universidade de São Paulo</li>
@@ -42,12 +49,12 @@
 					</div>
 				</div>
 				<div class="header-contato">
-					<div class="content">
-						<a class="link" href="https://api.whatsapp.com/send?phone=5511984153780&text=Em%20que%20posso%20te%20ajudar%3F" target="_blank">Quero agendar minha consulta</a>
+					<div class="container">
+						<a href="#">Quero agenda minha consulta</a>
 					</div>
 				</div>
 			</div>
-			<div data-aos="fade-left" class="header-info-right col-lg-6">
+			<div class="d-none header-info-right col-lg-6">
 				<img src="images/background.png" alt="Dra. Caroline Passone - Endocrinopediatra" title="Dra. Caroline Passone - Endocrinopediatra">
 			</div>
 		</div>

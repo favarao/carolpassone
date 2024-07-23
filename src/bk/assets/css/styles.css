@@ -1,5 +1,5 @@
 html {scroll-behavior: smooth;}
-body {margin:0; padding:0; outline:0; font-family: "Quicksand", sans-serif; color: #000;}
+body {margin:0; padding:0; outline:0; font-family: "Quicksand", sans-serif; color: #000; }
 html, body {
     margin: 0;
     padding: 0;
@@ -23,23 +23,15 @@ header nav ul li a{ display: block; color: #000; }
     display: flex;
     flex-wrap: wrap;
 }
-.header-info .header-info-left {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.header-info .header-info-left .header-apresentacao { margin-top: 50px; }
-.header-info .header-info-left .content { max-width: 70%; }
+.header-info .header-info-left .header-apresentacao { margin-top: 20px; }
 .header-info .header-info-left h2 {
     font-size: 24px;
     margin-bottom: 0;
     line-height: 32px;
 }
 .header-info .header-info-left h1 {
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 0;
-    font-weight: 800;
 }
 .header-info .header-info-left p {
     font-size: 16px;
@@ -49,19 +41,38 @@ header nav ul li a{ display: block; color: #000; }
 .header-info .header-info-left .header-especialidades {
     margin: 0;
     background-color: #f4f2ee;
-    padding: 20px 0;
+    padding: 10px 0;
 }
-.header-info .header-info-left ul { margin-left: 0px; }
-.header-info .header-info-left li { list-style: disc; font-size: 16px; }
+.header-info .header-info-left ul { margin-left: 0px; margin-bottom: 0; width: 470px; }
+.header-info .header-info-left li {
+    list-style: disc;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 0;
+}
 .header-info .header-info-left li::marker { color: #673628; }
 .header-info .header-info-right {
-    width: 55%;
+    width: 50%;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
 }
+.header-info::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/background.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+}
+.header-info-left{width: 100%;}
 /* .header-info .header-info-right img { vertical-align: bottom; margin-right: 12%; } */
-.header-contato { margin: 40px 0; }
+.header-contato { margin: 30px 0; }
 
 .header-contato a {
     display: block;
@@ -102,7 +113,7 @@ main section h2 { color: #393b38; font-size: 28px; font-weight: 400; line-height
 .atendimentos-content .bloco {
 	background-color: #eae7e0; 
 	border-radius: 30px; 
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	-webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.15);
 	-moz-box-shadow: 0 0 10px 5px rgba(0,0,0,0.15);
 	box-shadow: 0 0 10px 5px rgba(0,0,0,0.15);
@@ -112,17 +123,7 @@ main section h2 { color: #393b38; font-size: 28px; font-weight: 400; line-height
     margin: 0 10%;
     color: #393b38;
 }
-.atendimentos .endereco, .atendimentos .horario, .atendimentos .contato {
-    font-weight: 500;
-    color: black;
-}
-.atendimentos a{font-weight: 900;color: black; display: block; transition: 1s;}
-.atendimentos a:hover{transform: scale(1.05) !important;}
-.numeros .telefones{
-    display: flex;
-    flex-direction: column;
-}
-.local h3 { font-size: 24px; font-weight: 900; }
+.local h3 { font-size: 24px; font-weight: 700; }
 .local .endereco {
     font-size: 18px;
     font-weight: 500;
@@ -180,12 +181,6 @@ header nav ul {
 
 .nav-links a{
     color:#000;
-    transition: 0.2s;
-    display: block;
-}
-
-.header-contato .link{
-    transform-origin: top;
 }
 
 .header-mobile{
@@ -284,37 +279,7 @@ header nav ul {
     flex-wrap: wrap;
     padding: 0;
 }
-.tratamentos .conteudo {
-    height: 240px;
-    overflow: hidden;
-    position: relative;
-    transition: all 1s;
-}
-.tratamentos .conteudo.active{
-    /* height: auto; */
-}
-.tratamentos .conteudo::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 30px;
-    bottom: 0;
-    background: linear-gradient(to top, #d8d2c6 5px, transparent 30px);
-}
 
-.tratamentos .conteudo.active::before {
-    opacity: 0;
-}
-
-.tratamentos .conteudo h1 {
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.tratamentos .conteudo::-webkit-scrollbar {
-    display: none;
-}
 .tratamentos .tab-pane ul li {
     list-style-type: disc;
 }
@@ -333,7 +298,7 @@ header nav ul {
 }
 
 .link:hover{
-    transform: scale(1.2);
+    padding: 0 10px;
 }
 .link{
     cursor: pointer;
@@ -433,12 +398,21 @@ header nav ul {
     border: 3px solid saddlebrown;
     padding: 0 20px;
     margin: 40px;
-    border-radius: 25px;
-    height: auto;
+    border-radius: 25px;   
+}
+
+.tratamentos .conteudo {
+    height: 500px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.tratamentos .conteudo::-webkit-scrollbar {
+    display: none;
 }
 
 .slick-track{
-    display: block;
+    display: flex;
 }
 
 .slick-slide li {
@@ -459,7 +433,6 @@ header nav ul {
 .slick-tratamentos .slick-dots {
     bottom: -13px;
 }
-
 .slick-dots li button:before{
     color: #917462;
     font-size: 10px;
@@ -472,31 +445,6 @@ header nav ul {
 }
 .slick-dotted.slick-slider{
     margin-bottom: 0;
-}
-
-button.show-more {
-    background: transparent;
-    border: none;
-    color: saddlebrown;
-    font-weight: 700;
-    margin-left: auto;
-    display: block;
-    padding: 5px;
-    transition: 1s;
-}
-button.show-more:hover{
-    color:#552300;
-}
-
-.footer-numeros .telefones {
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-    align-items: center;
-}
-.footer-numeros a{
-    color: white;
-    font-weight: 600;
 }
 @media(max-width: 550px){
     .container{
@@ -526,9 +474,6 @@ button.show-more:hover{
     .slick-tratamentos .slick-slide{
         margin: 40px 1px;
     }
-    .header-info .header-info-left .content{
-        max-width: 92%;
-    }
     .header-info-right img{
         margin-left: -24%;
     }
@@ -545,7 +490,6 @@ button.show-more:hover{
         flex-direction: column;
         gap: 100px;
     }
-    
     .logo-mobile a {
         padding-left: 0;
         text-align: center;
@@ -606,24 +550,9 @@ button.show-more:hover{
     .header-info-right img{
         width: 110%;
     }
-    .header-info .header-info-left .content {
-        max-width: 92%;
-    }
 }
 @media(max-width: 1140px){
     .header-info-right img{
         width: 130%;
-    }
-}
-
-@media(min-width: 1500px){
-    .header-info .header-info-right{
-        width: 35%;
-    }
-    .header-info .header-info-left{
-        width: 65%;
-    }
-    .header-info .header-info-left .header-apresentacao {
-        /* margin-top: 10px; */
     }
 }
