@@ -6,10 +6,10 @@
         <meta name="author" content="" />
         <title><?=$titulo??"Dra. Caroline Passone"?></title>
         <link rel="icon" type="x-icon" href="media/favicon/favicon.ico">
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
     
         <link rel="stylesheet" href="assets/css/all.min.css">
         <script src="assets/js/3pontos.js"></script>
